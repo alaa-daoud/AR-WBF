@@ -1,0 +1,29 @@
+coco:
+  val_ann: "instances_val2017.json"
+
+detector_preds:
+  - "yolov5x_tta.csv"
+  - "EffNetB2-preds.csv"
+
+methods:
+  - name: "WBF"
+    args:
+      weights: [1.0, 1.0]
+      iou_thr: 0.5
+      skip_box_thr: 0.0
+      conf_type: avg
+  - name: "AR-WBF"
+    args:
+      weights: [1.0, 1.0]
+      reliability: [1.0, 1.0]
+      adaptive_iou: True
+      image_shape: [1024, 1024]
+      delta: 0.2
+  - name: "NMS"
+    args: {iou_thr: 0.5}
+  - name: "SoftNMS"
+    args: {iou_thr: 0.5}
+  - name: "ClusterNMS"
+    args: {iou_thr: 0.5}
+
+output_csv: "coco_baseline_results.csv"

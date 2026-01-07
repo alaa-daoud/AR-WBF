@@ -1,0 +1,26 @@
+ 
+# Core libraries
+numpy>=1.22
+pandas>=1.4
+scipy>=1.7
+
+# PyTorch and torchvision (for NMS baseline)
+torch>=1.12
+torchvision>=0.13
+
+# COCO evaluation tools
+pycocotools>=2.0.4
+
+# Progress bars and CLI
+tqdm>=4.64
+argparse>=1.4.0
+
+# Visualization (optional but helpful)
+matplotlib>=3.5
+seaborn>=0.11
+
+# YAML config handling
+PyYAML>=6.0
+
+# For reproducibility and environment logging
+rich>=12.0
