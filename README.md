@@ -36,3 +36,17 @@ If you find this code useful please cite:
   organization={CEUR-WS}
 }
 ```
+
+## AR-WBF method citation
+
+If you find this code useful please cite:
+
+```
+@inproceedings{daoud2026arwbf,
+  title={From Consensus to Causality: Adaptive Reliability Fusion for Object Detection Ensembles},
+  author={Daoud, Alaa and Alqasir, Hiba},
+  booktitle={The 3rd International Workshop on Causality, Agents and Large Models (CALM-26)},
+  year={2026},
+  organization={Procedia Computer Science}
+}
+```
